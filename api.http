@@ -1,0 +1,23 @@
+GET http://localhost:8080/produto
+###
+/// Aqui você pode enviar os Alunos
+POST http://localhost:8080/produtos
+Content-type: application/json
+
+{
+    "nome": "Samuel"
+ 
+}
+###
+/// Aqui você pode editar o nome do aluno pelo id 
+PUT http://localhost:8080/alunos?id=498dd04b-7087-4532-a202-d2ccde971e67
+Content-type: application/json
+
+{
+    "nome": "Samuel Anderson"
+ 
+}
+
+###
+/// Aqui você pode deletar algum aluno do seu servidor
+DELETE  http://localhost:8080/alunos?id=498dd04b-7087-4532-a202-d2ccde971e67
